@@ -1,11 +1,39 @@
-<div class="merger-container">
-    <div class="slot" id="slot1">➕</div>
-    <span class="plus-sign">+</span>
-    <div class="slot" id="slot2">➕</div>
-    <span class="equals-sign">=</span>
-    <div class="result" id="result">
-        <!-- The merged image will appear here -->
-        <img id="merged-img" src="" style="display:none; width: 100%; height: 100%;">
-        <span id="result-placeholder">?</span>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Merger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <header>
+        <h1>✨ Emoji Merger ✨</h1>
+        <button id="theme-toggle">Switch Theme</button>
+    </header>
+
+    <main>
+        <div class="merger-container">
+            <div class="slot" id="slot1">➕</div>
+            <span class="plus-sign">+</span>
+            <div class="slot" id="slot2">➕</div>
+            <span class="equals-sign">=</span>
+            <div class="result" id="result">
+                <!-- This is where the real merged image will go -->
+                <img id="merged-img" src="" style="display:none; width: 80px; height: 80px;">
+                <span id="result-placeholder">?</span>
+            </div>
+        </div>
+
+        <button id="save-btn">Save to My Keyboard</button>
+
+        <h3>Select Emojis:</h3>
+        <div class="keyboard" id="keyboard"></div>
+
+        <h3>Your Saved Merges:</h3>
+        <div class="saved-container" id="saved-keyboard"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
